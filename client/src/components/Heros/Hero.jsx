@@ -12,6 +12,7 @@ import "./hero.css";
 import Developper from "../Developper/Developper";
 import PricingModal from "../prices/PricingModal";
 import Footer from "../footer/footer";
+import Comments from "../comments/comments";
 
 function Hero() {
   const size = useWindowSize();
@@ -50,6 +51,7 @@ function Hero() {
             paddingTop: 80,
             zIndex: 1,
           }}
+
         >
           <h1
             className="fadeAnimation"
@@ -68,6 +70,7 @@ function Hero() {
               fontSize: isTablet ? 45 : 25,
               margin: 0,
             }}
+            
           >
             Scaled for Millions
           </h3>
@@ -88,7 +91,7 @@ function Hero() {
           </p>
           <div
             className="btn fadeAnimation hover2"
-            style={{ padding: "5px 15px", margin: "15px 0px" }}
+            style={{ padding: "15px 15px", margin: "15px 10px" }}
           >
             <a
               href={GoToREgister()}
@@ -100,6 +103,7 @@ function Hero() {
         </div>
       </div>
       <PricingModal />
+      <Comments />
       <Developper />
     </>
   );
