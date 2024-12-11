@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  font-family: "Nunito", sans-serif;
+  padding: 10px;
+  border-bottom: solid 0.5px #ededed71;
+
+}
+
+.logo {
+  width: 30px;
+  margin-right: 5px;
+}
+.listNav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listNav li {
+  margin-right:20px;
+
+}
+.listNav a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.listNav a:hover {
+  color: #0084ff;
+  transition: all ease-in 0.3s;
+  
+}
+
+.btn {
+  background-color: #0081fb;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+@keyframes fadeDown {
+  from{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+}
+
+.fadeDownAnimation{
+  animation: fadeDown 1s ease-in-out;
+}
+
+@keyframes fade {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+
+  }
+}
+
+.fadeDownAnimation{
+  animation: fade 1s ease-in-out;
+}
+
+input:focus{
+  outline: none;
+  
+}

@@ -1,0 +1,11 @@
+.background-base {
+  min-height: 1400px;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.grid-bg {
+  background: url("../assets/background/grid-bg.svg") no-repeat ;
+  background-size: contain;
+}
